@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Resume Builder</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+<header class="app-header">
+<h1>Resume Builder</h1>
+<div class="actions">
+<button id="downloadBtn">Download as PDF</button>
+<button id="resetBtn">Reset</button>
+</div>
+</header>
+
+
+<main class="container">
+<section class="editor">
+<form id="resumeForm">
+<fieldset>
+<legend>Personal</legend>
+<div class="row">
+<label>Full name<input type="text" name="name" id="name" placeholder="Jane Doe"></label>
+<label>Job title<input type="text" name="title" id="title" placeholder="Frontend Developer"></label>
+</div>
+<div class="row">
+<label>Email<input type="email" name="email" id="email" placeholder="jane@example.com"></label>
+<label>Phone<input type="tel" name="phone" id="phone" placeholder="+1 555 555 555"></label>
+</div>
+<label>Address<input type="text" name="address" id="address" placeholder="City, Country"></label>
+<label>LinkedIn / Website<input type="text" name="website" id="website" placeholder="linkedin.com/in/jane"></label>
+<label>Profile Photo<input type="file" id="photoInput" accept="image/*"></label>
+</fieldset>
+
+
+<fieldset id="summaryField">
+<legend>Summary</legend>
+<textarea id="summary" rows="4" placeholder="Short professional summary..."></textarea>
+</fieldset>
+
+
+<fieldset id="educationField">
+<legend>Education</legend>
+<div id="educationList"></div>
+<button type="button" id="addEducation">+ Add Education</button>
+</fieldset>
+
+
+<fieldset id="experienceField">
+<legend>Experience</legend>
+<div id="experienceList"></div>
+<button type="button" id="addExperience">+ Add Experience</button>
+</fieldset>
+
+
+<fieldset>
+<legend>Skills</legend>
+<input id="skillInput" placeholder="Add a skill and press Enter">
+<ul id="skillsList" class="chips"></ul>
+</fieldset>
+
+
+</form>
+</section>
+
+
+</html>
